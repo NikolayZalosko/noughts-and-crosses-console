@@ -27,7 +27,7 @@ public class Game {
         for (int y = 1; y <= fieldDimension; y++) {
             for (char x = 'A'; x < 'A' + fieldDimension; x++) {
                 String cellName = String.valueOf(x) + y;
-                field.put(cellName, new Cell(String.valueOf(x), y));
+                field.put(cellName, new Cell());
             }
         }
         System.out.println("Welcome to noughts-and-crosses game.\n" +
